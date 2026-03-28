@@ -1,0 +1,21 @@
+@use "sass:color";
+
+@use "variables";
+@use "functions";
+@use "base";
+@use "layout";
+
+:root {
+  --primary: #{variables.$color-primary};
+  --text: #{variables.$color-text};
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 1.5rem 0.9rem;
+  }
+
+  .main-nav {
+    text-align: center;
+  }
+}

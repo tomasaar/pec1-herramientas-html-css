@@ -1,0 +1,25 @@
+{
+  "name": "pec1-herramientas-html-css",
+  "version": "1.0.0",
+  "description": "PEC1 UOC Boilerplate uno-page responsive con Sass y Stylelint",
+  "main": "src/index.html",
+  "scripts": {
+    "sass": "sass src/scss:dist/css --style=compressed",
+    "copy-html": "cpx \"src/*.html\" dist/",
+    "copy-assets": "cpx \"src/assets/**/*\" dist/assets/",
+    "stylelint": "stylelint \"src/scss/**/*.scss\"",
+    "build": "npm run stylelint && npm run sass && npm run copy-html && npm run copy-assets",
+    "start": "npm run build && live-server dist --open=./index.html"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.72.0",
+    "stylelint": "^15.14.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-standard": "^30.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-order": "^6.0.0",
+    "stylelint-scss": "^4.4.0"
+  }
+}

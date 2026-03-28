@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "max-nesting-depth": 3,
+    "selector-class-pattern": "^[a-z][a-z0-9\\-]*$",
+    "string-quotes": "double",
+    "color-hex-case": "lower",
+    "declaration-colon-space-after": "always",
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "order/order": [
+      "custom-properties",
+      "declarations",
+      "rules"
+    ],
+    "order/properties-alphabetical-order": true
+  }
+}

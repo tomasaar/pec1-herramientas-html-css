@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0 0 1rem;
+  font-family: $font-primary;
+}

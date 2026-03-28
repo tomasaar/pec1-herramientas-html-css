@@ -1,0 +1,7 @@
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}
+
+@function responsive-font($size) {
+  @return clamp(0.9rem, $size * 1vw, 1.2rem);
+}
