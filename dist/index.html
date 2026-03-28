@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruta del Parque Natural de las Lagunas de Ruidera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/a1b2c3d4e5.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__container">
+        <h1 class="hero__title">Lagunas de Ruidera</h1>
+        <p class="hero__subtitle">Una ruta natural entre agua y piedra</p>
+        <a class="btn hero__cta" href="#informacion">Descubrir</a>
+      </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="main-nav__link" href="#home">Inicio</a>
+      <a class="main-nav__link" href="#informacion">Información</a>
+      <a class="main-nav__link" href="#galeria">Galería</a>
+      <a class="main-nav__link" href="#mapa">Mapa</a>
+      <a class="main-nav__link" href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+      <section id="informacion" class="content content--info">
+        <h2 class="content__title">Por qué visitar las Lagunas de Ruidera</h2>
+        <p class="content__text">
+          Las Lagunas de Ruidera en Castilla-La Mancha son un paraje de agua dulce glaciar 
+          ideal para disfrutar de senderismo, paddle surf y fotografía natural.
+        </p>
+
+        <article class="card">
+          <h3 class="card__title">Acceso y servicios</h3>
+          <ul class="card__list">
+            <li><i class="fa-solid fa-person-walking"></i> Vías de senderismo marcadas</li>
+            <li><i class="fa-solid fa-fish-fins"></i> Zonas de baño autorizadas</li>
+            <li><i class="fa-solid fa-binoculars"></i> Miradores panorámicos</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="galeria" class="content content--gallery">
+        <h2 class="content__title">Galería</h2>
+        <div class="grid">
+          <img src="assets/lagunas.jpg" alt="Laguna de Ruidera vista panorámica" class="grid__item" />
+          <img src="assets/laguna2.jpg" alt="Cascada natural entre rocas" class="grid__item" />
+          <img src="assets/laguna3.jpg" alt="Sendero al lado del agua" class="grid__item" />
+        </div>
+      </section>
+
+      <section id="mapa" class="content content--map">
+        <h2 class="content__title">Cómo llegar</h2>
+        <div class="mapa-embed" aria-label="Mapa de la ruta">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23781.92106921377!2d-2.5065285117092048!3d38.97932226618685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6e7abc9ec5654b%3A0xae5bf6e8552b33f3!2sLagunas%20de%20Ruidera!5e0!3m2!1ses!2ses!4v1713002711000!5m2!1ses!2ses"
+            width="100%"
+            height="320"
+            title="Mapa de las Lagunas de Ruidera"
+            loading="lazy"
+            referrerpolicy="no-referrer">
+          </iframe>
+        </div>
+      </section>
+
+      <section id="contacto" class="content content--contact">
+        <h2 class="content__title">Planifica tu visita</h2>
+        <form class="form" action="#" method="get">
+          <label class="form__label" for="nombre">Nombre</label>
+          <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+          <label class="form__label" for="mensaje">Mensaje</label>
+          <textarea class="form__textarea" id="mensaje" name="mensaje" rows="4" placeholder="¿Qué te gustaría saber?" required></textarea>
+
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Diseñado para PEC1 - Herramientas HTML y CSS II · 2026</p>
+      <p>Repositorio GitHub y despliegue Netlify en la documentación.</p>
+    </footer>
+  </body>
+</html>

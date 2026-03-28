@@ -1,11 +1,11 @@
-@use "variables";
+@use "variables" as vars;
 @use "functions";
 @use "base";
 @use "layout";
 
 :root {
-  --primary: #{variables.$color-primary};
-  --text: #{variables.$color-text};
+  --color-primary: #{vars.$color-primary};
+  --color-text: #{vars.$color-text};
 }
 
 @media (max-width: 900px) {

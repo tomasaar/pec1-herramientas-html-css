@@ -9,9 +9,6 @@ yarn-error.log*
 # OS
 .DS_Store
 
-# Build output (opcional para repo, obligatorio entregar dist en .zip)
-dist/
-
 # Environment files
 .env
 
