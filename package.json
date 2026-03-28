@@ -7,7 +7,7 @@
     "sass": "sass src/scss:dist/css --style=compressed",
     "copy-html": "cpx \"src/*.html\" dist/",
     "copy-assets": "cpx \"src/assets/**/*\" dist/assets/",
-    "stylelint": "npm exec stylelint -- src/scss/**/*.scss",
+    "stylelint": "node ./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
     "build": "npm run stylelint && npm run sass && npm run copy-html && npm run copy-assets",
     "start": "npm run build && live-server dist --open=./index.html"
   },
