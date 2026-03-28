@@ -5,9 +5,9 @@
   "main": "src/index.html",
   "scripts": {
     "sass": "node ./node_modules/sass/sass.js src/scss:dist/css --style=compressed",
-    "copy-html": "node ./node_modules/cpx/bin/main.js \"src/*.html\" dist/",
-    "copy-assets": "node ./node_modules/cpx/bin/main.js \"src/assets/**/*\" dist/assets/",
-    "copy-redirects": "node ./node_modules/cpx/bin/main.js \"src/_redirects\" dist/",
+    "copy-html": "npx cpx \"src/*.html\" dist/",
+    "copy-assets": "npx cpx \"src/assets/**/*\" dist/assets/",
+    "copy-redirects": "npx cpx \"src/_redirects\" dist/",
     "lint": "node ./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
     "build": "npm run sass && npm run copy-html && npm run copy-assets && npm run copy-redirects",
     "build:full": "npm run lint && npm run build",
