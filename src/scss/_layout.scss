@@ -1,11 +1,11 @@
 .btn {
   background-color: $color-primary;
-  color: #fff;
   border: none;
   border-radius: $radius-base;
-  padding: 0.9rem 1.4rem;
-  font-weight: 700;
+  color: #fff;
   cursor: pointer;
+  font-weight: 700;
+  padding: 0.9rem 1.4rem;
   transition: transform 0.25s ease, background-color 0.25s ease;
 
   &:hover,
@@ -16,23 +16,23 @@
 }
 
 .hero {
-  min-height: 80vh;
-  background: linear-gradient(180deg, rgba(7, 35, 69, 0.62), rgba(7, 35, 69, 0.62)), url("../assets/laguna1.jpg") center/cover no-repeat;
+  background: linear-gradient(180deg, rgb(7 35 69 / 62%), rgb(7 35 69 / 62%)), url("../assets/laguna1.jpg") center/cover no-repeat;
   color: #fff;
   display: grid;
+  min-height: 80vh;
   place-items: center;
   position: relative;
 
   &__overlay {
-    position: absolute;
+    background: rgb(0 0 0 / 35%);
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
   }
 
   &__container {
-    z-index: 1;
     text-align: center;
     width: min(92%, 780px);
+    z-index: 1;
   }
 
   &__title {
@@ -51,25 +51,25 @@
 }
 
 .main-nav {
-  background: #ffffffcc;
+  background: #fffc;
+  box-shadow: 0 2px 12px rgb(14 37 65 / 12%);
+  margin-bottom: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 12px rgba(14, 37, 65, 0.12);
-  margin-bottom: 1.2rem;
 
   &__link {
     color: $color-text;
     display: inline-block;
-    margin: 0.65rem 0.9rem;
     font-weight: 600;
+    margin: 0.65rem 0.9rem;
   }
 }
 
 .content {
-  padding: 2.2rem 1rem;
-  max-width: $max-width;
   margin: 0 auto;
+  max-width: $max-width;
+  padding: 2.2rem 1rem;
 
   &__title {
     font-size: 2.1rem;
@@ -92,8 +92,15 @@
   &--map {
     .mapa-embed {
       border-radius: $radius-base;
-      overflow: hidden;
       box-shadow: $shadow-soft;
+      overflow: hidden;
+
+      iframe {
+        border: 0;
+        display: block;
+        min-height: 320px;
+        width: 100%;
+      }
     }
   }
 
@@ -102,9 +109,9 @@
       background: #fff;
       border-radius: $radius-base;
       box-shadow: $shadow-soft;
-      padding: 1.2rem;
       display: grid;
       gap: 0.9rem;
+      padding: 1.2rem;
 
       &__label {
         font-weight: 600;
@@ -114,16 +121,16 @@
       &__textarea {
         border: 1px solid #c9d7e4;
         border-radius: 6px;
-        padding: 0.75rem;
         font-family: inherit;
+        padding: 0.75rem;
       }
     }
   }
 }
 
 .footer {
-  text-align: center;
-  padding: 1rem;
   background-color: #f1f7fb;
   color: #5b6f84;
+  padding: 1rem;
+  text-align: center;
 }
