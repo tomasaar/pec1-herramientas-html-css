@@ -4,7 +4,7 @@
   "description": "PEC1 UOC Boilerplate uno-page responsive con Sass y Stylelint",
   "main": "src/index.html",
   "scripts": {
-    "sass": "sass src/scss:dist/css --style=compressed",
+    "sass": "node ./node_modules/sass/sass.js src/scss:dist/css --style=compressed",
     "copy-html": "cpx \"src/*.html\" dist/",
     "copy-assets": "cpx \"src/assets/**/*\" dist/assets/",
     "lint": "node ./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
