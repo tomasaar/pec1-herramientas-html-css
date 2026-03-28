@@ -1,11 +1,13 @@
+@use "variables" as vars;
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $color-bg;
-  color: $color-text;
-  font-family: $font-primary;
+  background: vars.$color-bg;
+  color: vars.$color-text;
+  font-family: vars.$font-primary;
   line-height: 1.6;
   margin: 0;
 }
@@ -16,13 +18,13 @@ img {
 }
 
 a {
-  color: $color-primary;
+  color: vars.$color-primary;
   text-decoration: none;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $font-primary;
+  font-family: vars.$font-primary;
   margin: 0 0 1rem;
 }
