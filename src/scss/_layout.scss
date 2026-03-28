@@ -1,4 +1,5 @@
 @use "variables" as vars;
+@use "functions" as *;
 
 .btn {
   background-color: vars.$color-primary;

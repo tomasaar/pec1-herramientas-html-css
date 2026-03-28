@@ -8,7 +8,8 @@
     "copy-html": "node ./node_modules/cpx/bin/main.js \"src/*.html\" dist/",
     "copy-assets": "node ./node_modules/cpx/bin/main.js \"src/assets/**/*\" dist/assets/",
     "copy-redirects": "node ./node_modules/cpx/bin/main.js \"src/_redirects\" dist/",
-    "lint": "node ./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
+    "lint": "stylelint \"src/scss/**/*.scss\"",
+    "lint:fix": "stylelint \"src/scss/**/*.scss\" --fix",
     "build": "npm run sass && npm run copy-html && npm run copy-assets && npm run copy-redirects",
     "build:full": "npm run lint && npm run build",
     "start": "npm run build && live-server dist --open=./index.html"
