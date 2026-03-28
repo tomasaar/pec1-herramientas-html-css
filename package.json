@@ -5,8 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "sass": "node ./node_modules/sass/sass.js src/scss:dist/css --style=compressed",
-    "copy-html": "cpx \"src/*.html\" dist/",
-    "copy-assets": "cpx \"src/assets/**/*\" dist/assets/",
+    "copy-html": "node ./node_modules/cpx/bin/cpx.js \"src/*.html\" dist/",
+    "copy-assets": "node ./node_modules/cpx/bin/cpx.js \"src/assets/**/*\" dist/assets/",
     "lint": "node ./node_modules/stylelint/bin/stylelint.js src/scss/**/*.scss",
     "build": "npm run sass && npm run copy-html && npm run copy-assets",
     "build:full": "npm run lint && npm run build",
